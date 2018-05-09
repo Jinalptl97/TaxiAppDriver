@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_15dp"
+        android:clickable="true"
+        android:elevation="@dimen/_15dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_35dp"
+            android:layout_height="@dimen/_35dp">
+
+            <ImageView
+                android:id="@+id/imageicons"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_centerInParent="true" />
+
+
+        </RelativeLayout>
+
+        <com.taxibookingdriver.Font.Tahoma
+            android:id="@+id/u_navigation_row_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_13sp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/txt_number"-->
+        <!--android:textColor="@color/Black"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:background="@color/black_tranparent" />
+
+    </LinearLayout>
+</LinearLayout>

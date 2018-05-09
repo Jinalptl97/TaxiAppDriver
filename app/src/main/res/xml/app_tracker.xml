@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--  The property id associated with this analytics tracker -->
+    <string name="ga_trackingId">UA-117252524-1</string>
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <screenName name="com.taxibookingdriver.Activities.SplashActivity">Splash Screen</screenName>
+
+    <screenName name="com.taxibookingdriver.Activities.MainActivity">Main Screen</screenName>
+
+    <screenName name="com.taxibookingdriver.Activities.ConfirmTripActivity_new">Confirm Trip
+        Screen
+    </screenName>
+
+    <screenName name="com.taxibookingdriver.Activities.Customer_ratingActivity">Customer Rating
+        Screen
+    </screenName>
+    <screenName name="com.taxibookingdriver.Activities.EndTripActivity">End Trip Screen</screenName>
+    <screenName name="com.taxibookingdriver.Activities.FirstScreen">First Screen</screenName>
+    <screenName name="com.taxibookingdriver.Activities.Information_tab">Information Screen
+    </screenName>
+    <screenName name="com.taxibookingdriver.Activities.NotificationActivity">Notification Screen
+    </screenName>
+    <screenName name="com.taxibookingdriver.Activities.NewPasswordActivity">New Password Screen
+    </screenName>
+    <screenName name="com.taxibookingdriver.Activities.OTPActivity">OTP Screen</screenName>
+    <screenName name="com.taxibookingdriver.Activities.OTPActivity_login">OTP Login Screen
+    </screenName>
+    <screenName name="com.taxibookingdriver.Activities.OTPActivity_Profile_change">OTP Profile
+        change Screen
+    </screenName>
+    <screenName name="com.taxibookingdriver.Activities.PasswordActivity">Password Screen
+    </screenName>
+    <screenName name="com.taxibookingdriver.Activities.ProfileActivity">Profile Screen</screenName>
+    <screenName name="com.taxibookingdriver.Activities.ResetPasswordActivity">Reset Password
+        Screen
+    </screenName>
+    <screenName name="com.taxibookingdriver.Activities.ResetPasswordActivity_login">Reset Password
+        Login Screen
+    </screenName>
+    <screenName name="com.taxibookingdriver.Activities.Trip_detailActivity">Trip Detail Screen
+    </screenName>
+
+    <screenName name="com.taxibookingdriver.Fragments.Bank_info">Bank Info</screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Car_info">Car Info</screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Datewise_trip">Date wise Trip Info
+    </screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Earning">Earning</screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Fare_confirm">Fare Confirm</screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Fare_Setting">Fare Setting</screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Legal">Legal</screenName>
+    <screenName name="com.taxibookingdriver.Fragments.MainFragment">Dashboard</screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Message_confirm">Message Confirm</screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Personal_info">Personal Info</screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Rating">Rating</screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Subscription">Subscription</screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Timewise_trip">Time wise Trip Info
+    </screenName>
+    <screenName name="com.taxibookingdriver.Fragments.Trip_Detail">Trip Detail Info</screenName>
+    <!--
+      See Project Structure -> Analytics -> Google Analytics -> Learn More
+      to learn more about configuring this file.
+    -->
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/appdrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_56dp"
+                    android:background="@android:color/transparent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimary">
+
+                        </android.support.v7.widget.Toolbar>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true">
+
+                            <ImageView
+                                android:id="@+id/notify_bar"
+                                android:layout_width="@dimen/_56dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_15dp"
+                                android:rotation="180"
+                                android:src="@drawable/ic_arrow_back_black_24dp"
+                                android:visibility="gone" />
+
+                            <com.taxibookingdriver.Font.Tahoma
+                                android:id="@+id/headertext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_10dp"
+                                android:layout_toLeftOf="@+id/notify_bar"
+                                android:text="@string/Current_Trip"
+                                android:textColor="@color/White"
+                                android:textSize="@dimen/_15sp" />
+
+
+                            <ImageView
+                                android:layout_width="@dimen/_100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="@dimen/_5dp"
+                                android:scaleX="-1"
+                                android:src="@drawable/top_logo" />
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </android.support.design.widget.AppBarLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rr_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+
+                <fragment
+                    android:id="@+id/mapp"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rr_end_trip"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/_10dp"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:elevation="@dimen/_10dp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless">
+
+
+                    <com.taxibookingdriver.Font.Tahoma
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:text="@string/End_Trip"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_13sp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

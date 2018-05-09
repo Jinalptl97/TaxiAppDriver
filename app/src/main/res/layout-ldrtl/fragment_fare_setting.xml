@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:id="@+id/currenttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/earning_light"
+                    android:padding="@dimen/_2dp">
+
+                    <com.taxibookingdriver.Font.Tahoma
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_17dp"
+                        android:paddingRight="@dimen/_5dp"
+                        android:paddingTop="@dimen/_17dp"
+                        android:text="@string/Current_Per_KM_Rate"
+                        android:textColor="@color/profile_update"
+                        android:textSize="@dimen/_18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/earning_dark"
+                    android:gravity="center"
+                    android:padding="@dimen/_2dp">
+
+
+                    <com.taxibookingdriver.Font.Tahoma
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/_5dp"
+                        android:text="$"
+                        android:textColor="@color/profile_button"
+                        android:textSize="@dimen/_18sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/et_per_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_15dp"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:paddingBottom="@dimen/_16dp"
+                        android:paddingTop="@dimen/_17dp"
+                        android:textColor="@color/profile_button"
+                        android:textSize="@dimen/_18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rr_fare_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:background="@color/colorPrimary">
+
+                <com.taxibookingdriver.Font.Tahoma
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/Submit"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_18sp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@color/silver" />
+
+
+            <RelativeLayout
+                android:id="@+id/rr_last_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@color/profile_button"
+                android:visibility="gone">
+
+                <com.taxibookingdriver.Font.Tahoma
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_15dp"
+                    android:text="@string/Last_Rate"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_18sp" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@color/White"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rr_fare_setting_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_4dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:background="@color/profile_button" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

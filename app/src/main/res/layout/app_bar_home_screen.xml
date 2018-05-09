@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/appdrawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_56dp"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary">
+
+                </android.support.v7.widget.Toolbar>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true">
+
+                    <ImageView
+                        android:id="@+id/notify_bar"
+                        android:layout_width="@dimen/_56dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_15dp"
+                        android:paddingRight="@dimen/_15dp"
+                        android:src="@drawable/menu_drawer"
+                        android:visibility="visible" />
+
+                    <com.taxibookingdriver.Font.Tahoma
+                        android:id="@+id/headertext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:layout_toRightOf="@+id/notify_bar"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_15sp"
+                        android:visibility="gone" />
+
+                    <com.taxibookingdriver.Font.Tahoma
+                        android:id="@+id/offlinetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:layout_toRightOf="@+id/notify_bar"
+                        android:text="@string/Offline"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_15sp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rr_toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/offlinetext">
+
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/switch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:layout_margin="@dimen/_5dp"
+                            android:visibility="visible" />
+
+
+                    </RelativeLayout>
+
+                    <com.taxibookingdriver.Font.Tahoma
+                        android:id="@+id/onlinetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/rr_toggle"
+                        android:text="@string/Online"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_15sp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/_5dp"
+                        android:src="@drawable/top_logo" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+    <!--<RelativeLayout--><!--android:id="@+id/locationlayout"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentRight="true"--><!--android:visibility="visible">-->
+
+    <!--<Button--><!--android:id="@+id/myLocationButton"--><!--android:layout_width="@dimen/_40dp"--><!--android:layout_height="@dimen/_40dp"--><!--android:layout_marginBottom="@dimen/_10dp"--><!--android:layout_marginRight="@dimen/_10dp"--><!--android:background="@drawable/tracker" />--><!--</RelativeLayout>-->
+
+</RelativeLayout>
+
+
+

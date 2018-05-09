@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_7dp">
+
+        <com.taxibookingdriver.Font.Tahoma
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_text"
+            android:textSize="@dimen/_13sp" />
+
+        <com.taxibookingdriver.Font.Tahoma
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/_15dp"
+            android:textColor="@color/dark_text"
+            android:textSize="@dimen/_13sp" />
+
+
+        <com.taxibookingdriver.Font.Tahoma
+            android:id="@+id/txt_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/dark_text"
+            android:textSize="@dimen/_13sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/_7dp"
+        android:layout_marginRight="@dimen/_7dp"
+        android:layout_marginTop="@dimen/_7dp"
+        android:background="@drawable/dotted_black"
+        android:layerType="software" />
+
+
+</LinearLayout>

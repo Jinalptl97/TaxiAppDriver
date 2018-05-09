@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffc107</color>
+    <color name="colorPrimaryDark">#f1ae0c</color>
+    <color name="colorAccent">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+    <color name="colorgreen">#0cfa0c</color>
+    ss
+    <color name="Red">#eb2629</color>
+    <color name="silver">#cccccc</color>
+    <color name="my_order_bg">#EBEBEB</color>
+    <color name="white_tranparent">#80FFFFFF</color>
+    <color name="white_tranparent_dark">#95FFFFFF</color>
+    <color name="dashboard_white_tranparent_dark">#95FFFFFF</color>
+    <color name="black_tranparent">#80000000</color>
+    <color name="status_color">#013C48</color>
+    <color name="car_bg">#CCEEF7</color>
+    <color name="drawer">#9000C6F7</color>
+    <color name="drawerdark">#9000C6F7</color>
+    <color name="blue_transparent">#8006C0FF</color>
+    <color name="blue_transparenttttt">#4006C0FF</color>
+    <color name="profile_delete_ac">#7D7D7D</color>
+    <color name="profile_update">#0A3A4E</color>
+    <color name="otherbuton">#0A3A4E</color>
+    <color name="backgroundgrey">#E4ECEE</color>
+
+    <color name="profile_button">#02404B</color>
+    <color name="profile_button_trans">#E602404B</color>
+    <color name="bg">#E4ECEE</color>
+
+    <color name="earning_light">#C3D2D5</color>
+    <color name="earning_dark">#A7BCC1</color>
+
+    <color name="Notification">#CEDADC</color>
+    <color name="Notification_green">#019E0F</color>
+
+    //=============================================//
+
+    <color name="Yello_header">#ffc107</color>
+    <color name="dark_text">#353b3e</color>
+    <color name="light_text">#828282</color>
+    <color name="divider_color">#acacac</color>
+    <color name="button_color">#363f45</color>
+    <color name="final_color">#E9E9E9</color>
+    <color name="final_amt_color">#F0F0F0</color>
+    <color name="amt_color">#F5B72D</color>
+    <color name="receiver_bubble_color">#F9F1DA</color>
+    <color name="sender_bubble_color">#E2E2E2</color>
+    <color name="star_color">#D3D3D3</color>
+
+
+</resources>

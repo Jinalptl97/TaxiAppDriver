@@ -1,0 +1,47 @@
+<resources>
+
+    <declare-styleable name="CreditCardForm">
+        <attr name="include_exp" format="boolean" />
+        <attr name="include_security" format="boolean" />
+        <attr name="include_zip" format="boolean" />
+        <attr name="include_helper" format="boolean" />
+        <attr name="helper_text_color" format="color" />
+        <attr name="text_color" format="color" />
+        <attr name="hint_text_color" format="color" />
+        <attr name="cursor_color" format="color" />
+        <attr name="card_number_hint" format="string" />
+        <attr name="input_background" format="reference" />
+        <attr name="default_text_colors" format="boolean" />
+        <attr name="animate_on_error" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="Theme">
+
+        <!-- Default Spinner style. -->
+        <!-- <attr name="spinnerStyle" format="reference" /> -->
+        <!-- Default dropdown Spinner style. -->
+        <attr name="dropDownSpinnerStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CropImageView">
+        <attr name="guidelines">
+            <enum name="off" value="0" />
+            <enum name="onTouch" value="1" />
+            <enum name="on" value="2" />
+        </attr>
+        <attr name="fixAspectRatio" format="boolean" />
+        <attr name="aspectRatioX" format="integer" />
+        <attr name="aspectRatioY" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ExpandableLayout">
+        <attr name="el_headerLayout" format="reference" />
+        <attr name="el_contentLayout" format="reference" />
+        <attr name="el_duration" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="PageIndicator">
+        <attr name="indicator_spacing" format="dimension" />
+        <attr name="indicator_type" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="fraction" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7dp"
+                    android:layout_marginRight="@dimen/_7dp"
+                    android:layout_marginTop="@dimen/_7dp"
+                    app:cardBackgroundColor="@color/White"
+                    app:cardCornerRadius="@dimen/_3dp"
+                    app:cardElevation="@dimen/_7dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_30dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.taxibookingdriver.Font.Tahoma
+                                android:id="@+id/txt_total_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/Black"
+                                android:textSize="@dimen/_20sp" />
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:id="@+id/rating_dis"
+                                style="@style/RatingBar_row"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:progressBackgroundTint="@color/star_color"
+                                android:progressTint="@color/colorPrimary"
+                                android:secondaryProgressTint="@color/colorPrimary"
+                                android:stepSize="0.01" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5dp"
+                            android:layout_marginTop="@dimen/_5dp"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/_5dp"
+                            android:paddingTop="@dimen/_5dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                    style="@style/RatingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:isIndicator="true"
+                                    android:numStars="5"
+                                    android:progressBackgroundTint="@color/star_color"
+                                    android:progressTint="@color/star_color"
+                                    android:rating="5"
+                                    android:secondaryProgressTint="@color/star_color"
+                                    android:stepSize="1" />
+
+
+                                <com.taxibookingdriver.Font.Tahoma
+                                    android:id="@+id/five_rating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:paddingLeft="@dimen/_5dp"
+                                    android:textColor="@color/light_text"
+                                    android:textSize="@dimen/_11sp" />
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="@dimen/_5dp"
+                                android:background="@drawable/dotted_silver"
+                                android:layerType="software" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                    style="@style/RatingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:isIndicator="true"
+                                    android:numStars="4"
+                                    android:progressBackgroundTint="@color/star_color"
+                                    android:progressTint="@color/star_color"
+                                    android:rating="4"
+                                    android:secondaryProgressTint="@color/star_color"
+                                    android:stepSize="1" />
+
+                                <com.taxibookingdriver.Font.Tahoma
+                                    android:paddingLeft="@dimen/_5dp"
+                                    android:id="@+id/four_rating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/light_text"
+                                    android:textSize="@dimen/_11sp" />
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="@dimen/_5dp"
+                                android:background="@drawable/dotted_silver"
+                                android:layerType="software" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                    style="@style/RatingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:isIndicator="true"
+                                    android:numStars="3"
+                                    android:progressBackgroundTint="@color/star_color"
+                                    android:progressTint="@color/star_color"
+                                    android:rating="3"
+                                    android:secondaryProgressTint="@color/star_color"
+                                    android:stepSize="1" />
+
+
+                                <com.taxibookingdriver.Font.Tahoma
+                                    android:paddingLeft="@dimen/_5dp"
+                                    android:id="@+id/three_rating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/light_text"
+                                    android:textSize="@dimen/_11sp" />
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="@dimen/_5dp"
+                                android:background="@drawable/dotted_silver"
+                                android:layerType="software" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                    style="@style/RatingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:isIndicator="true"
+                                    android:numStars="2"
+                                    android:progressBackgroundTint="@color/star_color"
+                                    android:progressTint="@color/star_color"
+                                    android:rating="2"
+                                    android:secondaryProgressTint="@color/star_color"
+                                    android:stepSize="1" />
+
+
+                                <com.taxibookingdriver.Font.Tahoma
+                                    android:paddingLeft="@dimen/_5dp"
+                                    android:id="@+id/two_rating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/light_text"
+                                    android:textSize="@dimen/_11sp" />
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="@dimen/_5dp"
+                                android:background="@drawable/dotted_silver"
+                                android:layerType="software" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                    style="@style/RatingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:isIndicator="true"
+                                    android:numStars="1"
+                                    android:progressBackgroundTint="@color/star_color"
+                                    android:progressTint="@color/star_color"
+                                    android:rating="1"
+                                    android:secondaryProgressTint="@color/star_color"
+                                    android:stepSize="1" />
+
+
+                                <com.taxibookingdriver.Font.Tahoma
+                                    android:paddingLeft="@dimen/_5dp"
+                                    android:id="@+id/one_rating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/light_text"
+                                    android:textSize="@dimen/_11sp" />
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rr_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_7dp"
+                    android:layout_marginRight="@dimen/_7dp">
+
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
